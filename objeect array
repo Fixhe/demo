@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class book {
+    private int code;
+    private String tittle,subject;
+    private float price;
+    public book(){
+
+    }
+    public book(int code,String tittle,String subject,float price){
+        this.code=code;
+        this.tittle=tittle;
+        this.subject=subject;
+        this.price=price;
+    }
+    public void setCode(int code) {
+        this.code = code;
+    }
+    public void setTittle(String tittle) {
+        this.tittle = tittle;
+    }
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+    public void setPrice(float price) {
+        this.price = price;
+    }
+    public int getCode(){
+        return code;
+    }
+    public String getTittle() {
+        return tittle;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+    public void input(){
+        Scanner input=new Scanner(System.in);
+        System.out.println("input code :");
+        code=input.nextInt();
+        System.out.print("input tittle:");
+        tittle=input.next();
+        System.out.print("input Subject:");
+        subject=input.next();
+        System.out.print("input price :");
+        price=input.nextFloat();
+    }
+    public void output(){
+        System.out.println("----------------------------");
+        System.out.println("Code :"+code);
+        System.out.println("Title:"+tittle);
+        System.out.println("Subject:"+subject);
+        System.out.println("Price:"+price);
+    }
+}
+
